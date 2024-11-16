@@ -14,4 +14,5 @@ ALTER SYSTEM SET max_wal_size = '16GB';
 CREATE USER web with encrypted password '12345678';
 CREATE DATABASE android_api;
 GRANT ALL PRIVILEGES ON DATABASE android_api TO web;
+GRANT CREATE ON SCHEMA public TO web;
 ALTER DATABASE android_api SET timezone TO 'UTC';
