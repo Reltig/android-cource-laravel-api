@@ -1,0 +1,15 @@
+services:
+  pgsql:
+    container_name: "pgsql"
+    image: postgres:17-alpine
+    shm_size: 1g
+    environment:
+      - POSTGRES_USER=root
+      - POSTGRES_PASSWORD=12345678
+    volumes:
+      - ./docker/postgres/init:/docker-entrypoint-initdb.d/:ro
+      - pgdata:/var/lib/postgresql/data:rw
+    ports:
+      - "5432:5432"
+volumes:
+  pgdata:
