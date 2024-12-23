@@ -17,31 +17,31 @@ class ProductSeeder extends Seeder
             'id' => 0,
             'name' => "Name 1",
             'description' => "Description 1",
-            'iconUrl' => "https://placehold.co/400x400/F00/0FF/png",
+            'icon_url' => "https://placehold.co/400x400/F00/0FF/png",
             'price' => 100,
             'rating' => 5.0,
-            'ratingsCount' => 1,
-            'commentsCount' => 1
+            'ratings_count' => 1,
+            'comments_count' => 1
         ]);
         Product::insert([
             'id' => 1,
             'name' => "Name 2",
             'description' => "Description 2",
-            'iconUrl' => "https://placehold.co/400x400/F00/0FF/png",
+            'icon_url' => "https://placehold.co/400x400/F00/0FF/png",
             'price' => 100,
             'rating' => 5.0,
-            'ratingsCount' => 1,
-            'commentsCount' => 1
+            'ratings_count' => 1,
+            'comments_count' => 1
         ]);
         Product::insert([
             'id' => 2,
             'name' => "Name 3",
             'description' => "Description 2",
-            'iconUrl' => "https://placehold.co/400x400/F00/0FF/png",
+            'icon_url' => "https://placehold.co/400x400/F00/0FF/png",
             'price' => 100,
             'rating' => 5.0,
-            'ratingsCount' => 1,
-            'commentsCount' => 1
+            'ratings_count' => 1,
+            'comments_count' => 1
         ]);
     }
 }
